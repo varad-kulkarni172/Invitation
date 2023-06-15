@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2nd Chance Maybe ??</title>
+    <link rel="website icon" type="jpg" href="Women mug.jpg" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: antiquewhite;
+        background-image: url(BgN.png);
+        background-size: cover;
+      }
+
+      h1 {
+        color: black;
+      }
+
+      p {
+        color: black;
+        cursor: pointer;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #ff6b6b;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background-color: #ff4f4f;
+      }
+
+      .button-no {
+        background-color: #666;
+      }
+
+      .button-no:hover {
+        background-color: #555;
+      }
+      .text-box {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .heading-primary1 {
+        color: black;
+      }
+
+      .heading-primary-main1 {
+        display: block;
+        font-size: 60px;
+        font-weight: 400;
+        letter-spacing: 15px;
+        animation-name: moveInleft;
+        animation-duration: 2s;
+      }
+
+      @keyframes moveInleft {
+        0% {
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+
+        80% {
+          transform: translateX(10px);
+        }
+        100% {
+          opacity: 1;
+          transform: translate(0);
+        }
+      }
+
+      .paragraph-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .heading-primary {
+        color: black;
+      }
+
+      .heading-primary-main {
+        display: block;
+        font-size: 60px;
+        font-weight: 400;
+        letter-spacing: 15px;
+        animation-name: moveInleft;
+        animation-duration: 2s;
+      }
+
+      @keyframes moveInleft {
+        0% {
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+
+        80% {
+          transform: translateX(10px);
+        }
+        100% {
+          opacity: 1;
+          transform: translate(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-box"></div>
+    <h1 class="heading-primary1">
+      <span class="heading-primary-main1">Hey Mrunal🐼!</span>
+    </h1>
+    </div>
+    <div class="paragraph-box">
+      <h1>
+        <p class="heading-primary">
+          <span class="heading-primary">To be honest, I was a little nervous about asking you out on this coffee date. 
+            But I couldn't resist the opportunity to spend time with someone as intriguing as you.
+            Let's see this coffee date as an opportunity to learn more about each other, share our dreams and passions, and see if there's something beautiful brewing between us !!<br><br>
+            Let me know how you feel :
+          </span>
+        </p>
+        <button class="button" onclick="displayPopup1()">Yes</button>
+        <button class="button button-no" onclick="displayPopup2()">No</button>
+      </h1>
+    </div>
+  </body>
+  <script>
+    function displayPopup1() {
+      alert("Great choice as always...let's meet soon !");
+    }
+    function displayPopup2() {
+      alert("Error 404 occurred!! Please try again.  I recommend choosing the 1st option.");
+    }
+
+    var noOptionButton = document.querySelector(".button-no");
+
+    noOptionButton.addEventListener("mouseenter", function () {
+      noOptionButton.style.transform = "translateX(50px)";
+    });
+
+    noOptionButton.addEventListener("mouseleave", function () {
+      noOptionButton.style.transform = "translateX(0)";
+    });
+   
+  </script>
+</html>
