@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Invitation</title>
-    <link rel="website icon" type="jpg" href="Women mug.jpg" />
+    <title>Date Invitation</title>
+    <link rel="website icon" type="jpg" href="887479_heart_512x512.png" />
     <style>
       body {
         font-family: Arial, sans-serif;
         text-align: center;
-        background-color: antiquewhite;
-        background-image: url(BgN.png);
+        background-color: black;
+        background-image: url(Bg2.jpg);
         background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 500px;
+        
       }
 
       h1 {
@@ -54,6 +58,10 @@
 
       .heading-primary1 {
         color: white;
+        position: absolute;
+        top: 0;
+        left: 500px;  
+             
       }
 
       .heading-primary-main1 {
@@ -63,6 +71,7 @@
         letter-spacing: 15px;
         animation-name: moveInleft;
         animation-duration: 2s;
+         
       }
 
       @keyframes moveInleft {
@@ -86,10 +95,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        
+        
       }
 
       .heading-primary {
         color: white;
+        
       }
 
       .heading-primary-main {
@@ -120,13 +132,15 @@
   <body>
     <div class="text-box"></div>
     <h1 class="heading-primary1">
-      <span class="heading-primary-main1">Primary Heading Text which will contain the person's name followed by an optional ' ! '</span>
+      <span class="heading-primary-main1">Hey Shruti!</span>
     </h1>
     </div>
     <div class="paragraph-box">
       <h1>
         <p class="heading-primary">
-          <span class="heading-primary">This block will contain all the information which will be displayed on the webpage i.e. the main content<br><br>
+          <span class="heading-primary">We have known each other for quite some time now . Each moment i spend with u makes me feel special . To be honest, it almost feels surreal . I try my best not to lose any opportunity of spending time with u . I wanna take u out on a little date on 18th nov. I again consider this as an opportunity to spend time with u , know more about u, and have u as my girlfriend now, but just importantly , my best friend, it's just so amazing 
+            <br><br>
+            So you down for a date !?
           </span>
         </p>
         <button class="button" onclick="displayPopup1()">Yes</button>
@@ -136,16 +150,16 @@
   </body>
   <script>
     function displayPopup1() {
-      alert("You've clicked the Yes option");
+      alert("Great choice as always...let's meet soon !");
     }
     function displayPopup2() {
-      alert("You've clicked the No option");
+      alert("Error 404 occurred!! Please try again.  I recommend choosing the 1st option.");
     }
 
     var noOptionButton = document.querySelector(".button-no");
 
     noOptionButton.addEventListener("mouseenter", function () {
-      noOptionButton.style.transform = "translateX(50px)";
+      noOptionButton.style.transform = "translateX(60px)";
     });
 
     noOptionButton.addEventListener("mouseleave", function () {
